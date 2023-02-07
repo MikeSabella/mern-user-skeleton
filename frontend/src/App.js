@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
+import MbtaAlertsPage from "./components/pages/mbtaAlerts";
+import RoutesTrackerPage from "./components/pages/routesTrackerPage";
 import LandingPage from "./components/pages/landingPage";
 import HomePage from "./components/pages/homePage";
 import Login from "./components/pages/loginPage";
@@ -31,6 +33,9 @@ const App = () => {
           <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/mbtaAlerts" element={<MbtaAlertsPage/>} />
+          <Route exact path="/routesTrackerPage" element={<RoutesTrackerPage/>} />
+
           <Route path="/privateUserProfile" element={<PrivateUserProfile />} />
         </Routes>
       </UserContext.Provider>
@@ -40,4 +45,4 @@ const App = () => {
 
 
 
-export default App
+export default App;
